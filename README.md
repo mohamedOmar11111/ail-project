@@ -3,16 +3,17 @@
 > **Complete portable system for running autonomous AI agent teams on your infrastructure.**
 > **Clone once, run anywhere. Supports 100+ LLM providers including NVIDIA free tier.**
 
-```
-AIL-Project/
-├── .gitmodules                    # Git submodules config
-├── setup.sh                       # Linux/macOS/WSL setup (run once)
-├── setup.ps1                      # Windows PowerShell setup (run once)
-├── briefs/
-│   └── template.yaml              # Business brief template
-├── Growth Architect Store/        # 📚 SKILLS (git submodule)
-└── agent-intelligence-layer/      # ⚙️ ENGINE (git submodule)
-```
+---
+
+## **🔗 Quick Links to Sub-Repositories**
+
+| Repository | Description | GitHub | Clone Command |
+|------------|-------------|--------|---------------|
+| **🏗️ Growth Architect Store** | 50+ skills (Sales, Marketing, Dev, Design, Finance, Legal) | [![GitHub](https://img.shields.io/badge/GitHub-growth--architect--store-181717?logo=github)](https://github.com/mohamedOmar11111/growth-architect-store) | `git clone https://github.com/mohamedOmar11111/growth-architect-store.git` |
+| **⚙️ Agent Intelligence Layer** | Engine: planner, executor, gates, context store, CLI | [![GitHub](https://img.shields.io/badge/GitHub-agent--intelligence--layer-181717?logo=github)](https://github.com/mohamedOmar11111/agent-intelligence-layer) | `git clone https://github.com/mohamedOmar11111/agent-intelligence-layer.git` |
+| **📦 Parent (This Repo)** | Portable bundle with setup scripts & submodules | [![GitHub](https://img.shields.io/badge/GitHub-ail--project-181717?logo=github)](https://github.com/mohamedOmar11111/ail-project) | `git clone --recurse-submodules https://github.com/mohamedOmar11111/ail-project.git` |
+
+> **Install individually or use the parent repo (recommended) for one-command setup with submodules.**
 
 ---
 
@@ -239,6 +240,53 @@ AIL-Project/
 - **Agent Intelligence Layer:** MIT
 
 **Free to use, modify, sell, deploy. No vendor lock-in.**
+
+---
+
+## **📥 Individual Repository Installation**
+
+### **Option 1: Parent Repo (Recommended — Includes Both + Setup Scripts)**
+```bash
+# Clones parent + both submodules + runs setup
+git clone --recurse-submodules https://github.com/mohamedOmar11111/ail-project.git
+cd ail-project
+./setup.sh          # Linux/macOS/WSL
+.\setup.ps1         # Windows PowerShell
+```
+
+### **Option 2: Skills Only (Growth Architect Store)**
+```bash
+# Just the skills repository (50+ roles as markdown)
+git clone https://github.com/mohamedOmar11111/growth-architect-store.git
+cd "Growth Architect Store"
+# Browse departments/ for skills, or use with AIL engine
+```
+
+### **Option 3: Engine Only (Agent Intelligence Layer)**
+```bash
+# Just the engine (planner, executor, gates, CLI)
+git clone https://github.com/mohamedOmar11111/agent-intelligence-layer.git
+cd agent-intelligence-layer
+python -m venv .venv
+source .venv/bin/activate  # Windows: .\.venv\Scripts\Activate.ps1
+pip install -e ".[ui]"
+cp .env.example .env
+# Edit .env with your LLM provider
+# Set AIL_SKILLS_PATH to point to your skills repo
+```
+
+### **Option 4: Use Skills with Your Own Code**
+```python
+# Import skill loader directly in your project
+from agent_intelligence.core.skill_loader import SkillLoader
+
+loader = SkillLoader(Path("path/to/growth-architect-store"))
+skills = loader.load_all_skills()
+
+# Use any skill's prompt directly
+skill = skills["m01-head-of-marketing"]
+print(skill.prompt)
+```
 
 ---
 
