@@ -1,0 +1,92 @@
+version: "v1.0"
+date: "2026-01-01"
+business:
+  name: "Your Company Name"
+  website: "https://yourwebsite.com"
+  tagline: "Your tagline here"
+
+offer:
+  name: "Your Product Name"
+  description: "What you sell, deliverables, pricing model"
+  price: 299
+  currency: "USD"
+  billing: "monthly"  # monthly, annual, per-use
+  trial: "14 days free"
+
+icp:
+  primary: "Your ideal customer (role, company size, industry)"
+  geography: ["North America", "Europe"]
+  exclusions: ["Who you don't serve"]
+
+problem:
+  job: "What job they're trying to do"
+  current_alternative: "How they do it now (manual, competitor, nothing)"
+  desired_outcome: "What they want instead"
+
+differentiators:
+  - claim: "Your unique claim #1"
+    evidence: "Source/proof for this claim"
+    scope: "Where this claim can be used (landing page, ads, emails, all)"
+  - claim: "Your unique claim #2"
+    evidence: "Source/proof"
+    scope: "all"
+
+objectives:
+  current: "One measurable outcome with deadline (e.g., 500 signups by Dec 31, 2026)"
+  baseline: "Current numbers (e.g., 50 organic + 20 paid/month, 30% trial-to-paid)"
+
+capacity:
+  people: 2
+  hours_per_week: 20
+  roles: ["1 marketer (15h)", "1 designer (5h)"]
+
+budget:
+  monthly: 5000
+  currency: "USD"
+  authority: "Decision maker name and role"
+
+brand_voice:
+  tone: "Direct, data-driven, helpful"
+  examples:
+    - "Your example sentence showing voice"
+    - "Another example"
+  avoid: ["hype", "fluff", "jargon", "vague promises"]
+
+approved_claims:
+  - claim: "Specific metric claim"
+    evidence: "Data source"
+    scope: "all"
+
+systems:
+  crm: "HubSpot / Salesforce / Pipedrive / None"
+  analytics: ["Google Analytics", "Mixpanel"]
+  email: "Customer.io / Mailchimp / ConvertKit"
+  content: "Notion / Google Docs"
+  design: "Figma / Canva"
+
+permissions:
+  read: ["crm", "analytics"]
+  draft: ["blog", "linkedin", "emails", "landing_pages"]
+  publish: ["blog", "linkedin"]  # Requires approval
+  send_email: true  # Requires approval
+
+financial:
+  entity: "Your Legal Entity"
+  jurisdiction: "State/Country"
+  currency: "USD"
+  accounting: "accrual"
+
+working_conventions:
+  timezone: "America/New_York"
+  date_format: "ISO 8601"
+  language: "English"
+
+decision_owner: "Name, Title"
+
+constraints:
+  - "No customer PII in prompts"
+  - "Legal review for enterprise claims"
+  - "GDPR compliance for EU"
+  - "No unsubstantiated metrics"
+
+brief_version: "v1.0"

@@ -1,0 +1,55 @@
+# AIL Project — Parent Repo .gitignore
+
+# Submodules (handled by git submodule)
+# Growth Architect Store/
+# agent-intelligence-layer/
+
+# Virtual environments
+.venv/
+venv/
+env/
+*.venv/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data
+data/
+*.db
+*.sqlite
+chroma/
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+
+# MCP
+mcp/servers/__pycache__/

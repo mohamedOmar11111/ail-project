@@ -1,0 +1,6 @@
+[submodule "Growth Architect Store"]
+	path = Growth Architect Store
+	url = https://github.com/mohamedOmar11111/growth-architect-store.git
+[submodule "agent-intelligence-layer"]
+	path = agent-intelligence-layer
+	url = https://github.com/mohamedOmar11111/agent-intelligence-layer.git
