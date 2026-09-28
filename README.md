@@ -294,7 +294,84 @@ print(skill.prompt)
 
 - **Issues:** GitHub Issues on respective repos
 - **Discussions:** GitHub Discussions
-- **Email:** mado@growtharchitect.io
+- **Email:** mo.omar477@gmail.com
+
+---
+
+**Built by operators, for operators. Run your AI team on your terms. 🚀**
+
+---
+
+## **🎯 Concept Diagram**
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         AIL PROJECT ECOSYSTEM                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+   ┌──────────────────────┐         ┌──────────────────────────────────────┐
+   │   YOU (Operator)     │         │         GROWTH ARCHITECT STORE       │
+   │  • Define goals      │         │  📚 50+ Roles as Markdown Skills     │
+   │  • Approve actions   │         │                                     │
+   │  • Own decisions     │         │  • Sales S01-S20                     │
+   └──────────┬───────────┘         │  • Marketing M01-M11                 │
+              │                    │  • Developers (6)                      │
+              │ Goal + Brief       │  • Designers (6)                       │
+              ▼                    │  • Finance, Legal, Social, etc.        │
+   ┌─────────────────────────┐     │  • GPT-6 Astra Business Team (40)    │
+   │  AGENT INTELLIGENCE     │     │  • Each: Prompt + Schema + Acceptance│
+   │  LAYER (Engine)         │     └──────────────┬───────────────────────┘
+   │                         │                    │ loads & validates
+   │  • Planner              │                    ▼
+   │  • Executor (LangGraph) │
+   │  • Context Store        │     ┌──────────────────────────────────────┐
+   │  • Eval/Human/Cost Gates│     │    AGENT INTELLIGENCE LAYER          │
+   │  • Model Adapter        │     │    (Portable Python Engine)          │
+   │  • CLI + UI             │     │                                       │
+   └───────────┬─────────────┘     │  • Skill Loader                      │
+               │                   │  • Planner (Coordinator logic)       │
+               │                   │  • Executor (Checkpoints, Retries)   │
+               │                   │  • Context Store (SQLite + ChromaDB) │
+               │                   │  • Eval Gates (Rubric + Blockers)    │
+               │                   │  • Human Gates (Approval workflow)   │
+               │                   │  • Cost Gates (Budget enforcement)   │
+               │                   │  • Model Adapter (LiteLLM 100+)      │
+               │                   │  • Observability (Metrics + Logs)    │
+               └───────────────────┘     └──────────────┬─────────────────┘
+                                                       │ model-agnostic
+                                                       ▼
+                              ┌──────────────────────────────────────────┐
+                              │           ANY LLM PROVIDER               │
+                              │                                           │
+                              │  🆓 FREE TIER:                           │
+                              │    • Ollama (local, unlimited)           │
+                              │    • NVIDIA Nemotron-3-Ultra (1K/day)    │
+                              │                                           │
+                              │  ☁️ CLOUD:                                │
+                              │    • OpenAI (GPT-4o, o1)                 │
+                              │    • Anthropic (Claude 3.5 Sonnet)       │
+                              │    • Google (Gemini 1.5 Pro/Flash)       │
+                              │    • OpenRouter (100+ models)            │
+                              │                                           │
+                              │  🏢 ENTERPRISE:                          │
+                              │    • Azure OpenAI                        │
+                              │    • AWS Bedrock                         │
+                              │    • Google Vertex AI                    │
+                              │                                           │
+                              │  🏠 LOCAL:                               │
+                              │    • LM Studio / vLLM / LocalAI          │
+                              └──────────────────────────────────────────┘
+
+   WORKFLOW:
+   ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+   │  GOAL   │───▶│ PLANNER │───▶│EXECUTOR │───▶│ EVAL    │───▶│ HUMAN   │
+   │ + BRIEF │    │(Coordin)│    │(Roles)  │    │(Rubric) │    │(Approve)│
+   └─────────┘    └─────────┘    └─────────┘    └─────────┘    └─────────┘
+        │                                    ▲                        │
+        │                                    │                        │
+        └─────────────── CONTEXT STORE ──────┴────────────────────────┘
+                    (SQLite + ChromaDB)
+```
 
 ---
 
